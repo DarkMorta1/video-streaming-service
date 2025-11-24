@@ -1,0 +1,39 @@
+<button
+              onClick={toggleAudio}
+              className={`control-btn ${!audioEnabled ? 'disabled' : ''}`}
+              title={audioEnabled ? 'Mute' : 'Unmute'}
+            >
+              🎤 {audioEnabled ? 'Mute' : 'Unmuted'}
+            </button>
+            <button
+              onClick={toggleVideo}
+              className={`control-btn ${!videoEnabled ? 'disabled' : ''}`}
+              title={videoEnabled ? 'Stop Video' : 'Start Video'}
+            >
+              📹 {videoEnabled ? 'Stop Video' : 'Start Video'}
+            </button>
+          </div>
+=======
+          <div className="controls">
+            <button
+              onClick={toggleAudio}
+              className={`control-btn ${!audioEnabled ? 'disabled' : ''}`}
+              title={audioEnabled ? 'Mute' : 'Unmute'}
+            >
+              🎤 {audioEnabled ? 'Mute' : 'Unmuted'}
+            </button>
+            <button
+              onClick={toggleVideo}
+              className={`control-btn ${!videoEnabled ? 'disabled' : ''}`}
+              title={videoEnabled ? 'Stop Video' : 'Start Video'}
+            >
+              📹 {videoEnabled ? 'Stop Video' : 'Start Video'}
+            </button>
+            <button
+              onClick={toggleScreenShare}
+              className={`control-btn ${isScreenSharing ? 'active' : ''}`}
+              title={isScreenSharing ? 'Stop Screen Sharing' : 'Start Screen Sharing'}
+            >
+              🖥️ {isScreenSharing ? 'Stop Sharing' : 'Share Screen'}
+            </button>
+          </div>
