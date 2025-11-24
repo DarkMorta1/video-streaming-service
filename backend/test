@@ -1,1 +1,4 @@
-
+PORT=5000
+NODE_ENV=development
+CORS_ORIGIN=http://localhost:3000
+ add this in backend.env to run the project
